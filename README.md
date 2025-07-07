@@ -1,0 +1,5 @@
+**Personalized Learning Assistant Description**
+
+The `app_groq_chatbot.py` script is a Streamlit-based web application that implements a personalized learning assistant powered by the Eden AI text chat API. The app provides an interactive chat interface where users can ask questions related to their studies, and the assistant responds with helpful answers. The Eden AI API key is hardcoded (to be replaced with a secure environment variable in production), and the API is configured to use OpenAI as the provider, with options to switch to others like Google or Mistral.
+
+The core function, `call_eden_ai_chat`, sends user messages and conversation history to the Eden AI API, with a temperature of 0.7 for balanced responses and a maximum token limit of 1024. The app maintains chat history in Streamlit's session state, initializing with a friendly assistant greeting. It displays past messages on rerun and updates the UI in real-time as users input queries. Responses are rendered in a chat format, with error handling for API issues, ensuring a smooth user experience. This tool is ideal for students seeking an interactive, AI-driven learning companion.
